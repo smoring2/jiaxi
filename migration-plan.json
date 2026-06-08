@@ -1,0 +1,27 @@
+{
+  "project_root": "/home/atxuser/.atxct/sources/smoring2-gh3/repos/jiaxi",
+  "source_boot_version": "2.4.1",
+  "target_boot_version": "4.0.0",
+  "build_tool": "maven",
+  "java_version_source": "1.8",
+  "java_version_target": "17",
+  "complexity_tier": "green-small",
+  "modules": ["jiaxi"],
+  "abort": false,
+  "tds_to_run": ["TD-1", "TD-4"],
+  "tds_skipped": {
+    "TD-2": "No @MockBean, no Spring Security, no test-slice annotations",
+    "TD-3": "No observability dependencies"
+  },
+  "incompatible_deps": [],
+  "features_detected": {
+    "security": false,
+    "jackson_custom": false,
+    "observability": false,
+    "spring_cloud": false,
+    "spring_batch": false,
+    "spring_data": false,
+    "thymeleaf": true
+  },
+  "pre_existing_failures": []
+}
