@@ -1,0 +1,36 @@
+migration_summary:
+  source_version: "2.4.1"
+  target_version: "4.1.0"
+  java_source_version: "1.8"
+  java_target_version: "21"
+  build_tool: maven
+  build_command: "JAVA_HOME=/usr/lib/jvm/java-25-amazon-corretto.x86_64 mvn clean verify"
+  complexity_tier: "red-xlarge"
+
+tds_executed:
+  - name: springboot4-core-migration
+    status: PASS
+    changes:
+      - "Updated spring-boot-starter-parent from 2.4.1 to 4.1.0"
+      - "Updated java.version from 1.8 to 21"
+      - "Renamed spring-boot-starter-web to spring-boot-starter-webmvc"
+  - name: springboot4-verification
+    status: PASS
+    details: "mvn clean verify succeeded. Tests run: 1, Failures: 0, Errors: 0, Skipped: 0"
+
+build_result:
+  command: "JAVA_HOME=/usr/lib/jvm/java-25-amazon-corretto.x86_64 mvn clean verify"
+  status: SUCCESS
+  build_log: "target/surefire-reports/com.rosseneri.jiaxi.JiaxiApplicationTests.txt"
+
+unit_tests:
+  total: 1
+  passed: 1
+  failed: 0
+  skipped: 0
+  errors: 0
+
+files_modified:
+  - pom.xml
+
+manual_review_needed: []
