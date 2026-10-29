@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jiaxi" target="1.8" />
+      <module name="jiaxi" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
